@@ -1,0 +1,40 @@
+{
+  "name": "@sentisis/redis-wrapper",
+  "version": "1.0.0",
+  "description": "Redis wrapper for common case functions",
+  "author": "Pablo Gomez <pgomez@sentisis.com>"{
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sentisis/redis-wrapper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentisis/redis-wrapper"
+  },
+  "homepage": "https://github.com/sentisis/redis-wrapper#readme",
+  "keywords": [
+    "redis", 
+    "promises",
+    "bluebird",
+  ],
+  "main": "./index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "lodash": "^4.17.4",
+    "redis": "^2.7.1",
+    "winston": "^2.3.1",
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "mocha": "^3.2.0",
+    "mocha-eslint": "^2.0.2"
+  }
+}
