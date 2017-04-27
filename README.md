@@ -7,7 +7,7 @@ Redis server should be running and a client should be already created.
 
 ## Usage
 ```
-npm install redis-wapper
+npm install redis-wrapper
 ```
 
 
