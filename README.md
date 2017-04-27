@@ -7,17 +7,28 @@ Redis server should be running and a client should be already created.
 
 ## Usage
 ```
-npm install redis-wapper
+npm i @sentisis/redis-wrapper
 ```
 
 
 ```javascript
 const redis = require('redis');
 const Promise = require('bluebird');
-// enable promises for redis
+
+const redisWrapper = require('@sentisis/redis-wrapper');
+// enable promises for redis https://github.com/NodeRedis/node_redis#promises
 Promise.promisifyAll(redis.RedisClient.prototype);
 Promise.promisifyAll(redis.Multi.prototype);
-const client = redis.createClient();`
+
+const client = redis.createClient();
+const key = 'a';
+const value = 'b';
+client.set(key, value);
+
+redisWrapper.getter(client, key)
+.then((res) => {
+  // res = { value: 'b'}
+});
 ```
 ---
 ## Current Modules
