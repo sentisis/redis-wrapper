@@ -1,6 +1,6 @@
 {
   "name": "@sentisis/redis-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redis wrapper for common case functions",
   "author": "Pablo Gomez <pgomez@sentisis.com>",
   "license": "MIT",
