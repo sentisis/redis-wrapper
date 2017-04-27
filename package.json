@@ -1,6 +1,6 @@
 {
   "name": "@sentisis/redis-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redis wrapper for common case functions",
   "author": "Pablo Gomez <pgomez@sentisis.com>"{
   "license": "MIT",
@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/sentisis/redis-wrapper#readme",
   "keywords": [
-    "redis", 
+    "redis",
     "promises",
     "bluebird",
   ],
