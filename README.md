@@ -33,7 +33,9 @@ redisWrapper.getter(client, key)
 ---
 ## Current Modules
 
-### Counter
+All Module operations are atomic, using [transactions](https://redis.io/topics/transactions) when needed.
+
+### [Keys] COUNTER
 
 Increments a given key, for a INCR_BY parameter (or 1 if not defined)
 
@@ -56,7 +58,7 @@ Where:
 
 * `new_value`: is the actual value AFTER being updated
 
-### Getter
+### [Keys] GETTER
 
 Gets the value of a given key.
 
@@ -77,7 +79,7 @@ Where:
 
 * `value` is an empty string (`''` if the key does not exist) or the value
 
-### Remember
+### [Keys] REMEMBER
 
 Remembers a given key, for a specified ttl and value into redis
 
@@ -97,7 +99,7 @@ Response
 
 That indicates if the just inserted key is new to the system or not.
 
-### Delete
+### [Keys] REMOVE
 
 Deletes a given key.
 
@@ -119,7 +121,7 @@ Where:
 * `deleted` is `true` if the key has been deleted, `false` otherwise (the key did not exist).
 
 
-### Healthchecker
+### HEALTHCHECKER
 
 Checks if the system is running correctly, or not.
 
@@ -131,7 +133,7 @@ Response:
 
 `{'status': 'ok'}`
 
-### Flusher
+### FLUSHER
 
 Flush the DB.
 
